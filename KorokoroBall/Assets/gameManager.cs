@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class gameManager : MonoBehaviour
 {
-   
     public void SceneReset()
     {
         string activeSceneName = SceneManager.GetActiveScene().name;
@@ -18,7 +17,8 @@ public class gameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Screen.SetResolution(1920, 1080, false);
+        Application.targetFrameRate = 60;
     }
 
     // Update is called once per frame
